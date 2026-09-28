@@ -80,5 +80,5 @@ Or simply double-click [index.html](file:///Users/gemshi/Library/Mobile%20Docume
 
 ## 📬 Contact & Support
 
-- **Developer:** Gemshi
+- **Developer:** [Gemshi](https://gemshi.com/)
 - **Email:** [gemshi@me.com](mailto:gemshi@me.com)

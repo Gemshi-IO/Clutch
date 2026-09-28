@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>User Guide &amp; Help Center — Clutch</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="User Guide &amp; Help Center — Clutch">
+  <meta name="description"
+    content="The complete user guide for Clutch on iOS 26. Master instant link capture, distraction-free reading, on-device AI extractions, shelves, and Daily Digest audio.">
+  <meta name="keywords"
+    content="Clutch, user guide, tutorial, help center, read later, iOS 26, Apple Intelligence, Daily Digest, bookmarking, shortcuts">
+  <meta name="author" content="Gemshi">
+  <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F5F5F7" media="(prefers-color-scheme: light)">
+
+  <!-- Apple Specific Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Clutch">
+  <link rel="apple-touch-icon" href="images/PocketbookamLogo.svg">
+  <link rel="icon" type="image/svg+xml" href="images/PocketbookamLogo.svg">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Liquid Glow Canvas -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Clutch Home">
+        <div class="brand-icon-wrapper">
+          <img src="images/PocketbookamLogo.svg" alt="Clutch Icon" class="brand-icon-img" width="36" height="36">
+        </div>
+        <span>Clutch</span>
+        <span class="brand-badge">iOS 26</span>
+      </a>
+
+      <nav aria-label="Header Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html#features" class="nav-link">Features</a></li>
+          <li><a href="index.html#intelligence" class="nav-link">Intelligence</a></li>
+          <li><a href="index.html#audio-digest" class="nav-link">Audio Digest</a></li>
+          <li><a href="help.html" class="nav-link active" style="color: var(--accent-cyan); font-weight: 600;">User Guide</a></li>
+          <li><a href="terms.html" class="nav-link">Terms</a></li>
+          <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <svg id="themeIconSun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="index.html#download" class="btn btn-primary btn-sm">
+          <span>Get Beta</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="guide-main">
+    <div class="container">
+      <a href="index.html" class="legal-back-nav">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Clutch Home</span>
+      </a>
+
+      <!-- Guide Hero Banner -->
+      <div class="guide-hero">
+        <div class="section-eyebrow">Documentation &amp; User Manual</div>
+        <h1 class="guide-title">Clutch User Guide</h1>
+        <p class="guide-subtitle">
+          Save anything from anywhere in under a second — and never feel guilty about the pile again.
+          A private, on-device read-later sanctuary for iPhone and iPad with 100% on-device Apple Intelligence.
+        </p>
+
+        <!-- Live Instant Search -->
+        <div class="guide-search-wrapper">
+          <svg class="guide-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="guideSearchInput" class="guide-search-input" placeholder="Search the guide... (e.g., 'Daily Digest', 'Recipe', 'Gestures', 'iCloud')">
+          <button id="guideSearchClear" class="guide-search-clear" aria-label="Clear Search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Quick Jump Filter Pills -->
+        <div class="guide-quick-pills">
+          <a href="#getting-started" class="guide-quick-pill">⚡️ Getting Started</a>
+          <a href="#saving-links" class="guide-quick-pill">🔗 Saving Links</a>
+          <a href="#inbox-home" class="guide-quick-pill">📥 Gestures &amp; Inbox</a>
+          <a href="#reading-watching" class="guide-quick-pill">📖 Distraction-Free Reader</a>
+          <a href="#organize" class="guide-quick-pill">🏷️ Tags &amp; Shelves</a>
+          <a href="#daily-digest" class="guide-quick-pill">🎧 Daily Digest Audio</a>
+          <a href="#apple-intelligence" class="guide-quick-pill">✨ Apple Intelligence</a>
+          <a href="#troubleshooting" class="guide-quick-pill">🛠️ Troubleshooting</a>
+        </div>
+      </div>
+
+      <!-- 2-Column Documentation Layout -->
+      <div class="guide-layout">
+        
+        <!-- Sticky Sidebar Navigation -->
+        <aside class="guide-sidebar" aria-label="Table of Contents">
+          <div class="guide-toc-title">Table of Contents</div>
+          <nav>
+            <ul class="guide-toc-list" id="guideTocList">
+              <li><a href="#getting-started" class="guide-toc-link active"><span class="guide-toc-num">01</span><span>Getting Started</span></a></li>
+              <li><a href="#saving-links" class="guide-toc-link"><span class="guide-toc-num">02</span><span>Saving Links</span></a></li>
+              <li><a href="#saving-notes" class="guide-toc-link"><span class="guide-toc-num">03</span><span>Saving Notes</span></a></li>
+              <li><a href="#inbox-home" class="guide-toc-link"><span class="guide-toc-num">04</span><span>Your Inbox (Home)</span></a></li>
+              <li><a href="#reading-watching" class="guide-toc-link"><span class="guide-toc-num">05</span><span>Reading &amp; Watching</span></a></li>
+              <li><a href="#organize" class="guide-toc-link"><span class="guide-toc-num">06</span><span>Organize: Tags &amp; Collections</span></a></li>
+              <li><a href="#library" class="guide-toc-link"><span class="guide-toc-num">07</span><span>Library Segments</span></a></li>
+              <li><a href="#search-filters" class="guide-toc-link"><span class="guide-toc-num">08</span><span>Search &amp; Filters</span></a></li>
+              <li><a href="#up-next-reminders" class="guide-toc-link"><span class="guide-toc-num">09</span><span>Up Next &amp; Reminders</span></a></li>
+              <li><a href="#daily-digest" class="guide-toc-link"><span class="guide-toc-num">10</span><span>Daily Digest Audio</span></a></li>
+              <li><a href="#apple-intelligence" class="guide-toc-link"><span class="guide-toc-num">11</span><span>Apple Intelligence</span></a></li>
+              <li><a href="#widgets-siri" class="guide-toc-link"><span class="guide-toc-num">12</span><span>Widgets, Siri &amp; Spotlight</span></a></li>
+              <li><a href="#inbox-zero" class="guide-toc-link"><span class="guide-toc-num">13</span><span>Inbox Zero &amp; Trash</span></a></li>
+              <li><a href="#free-unlimited" class="guide-toc-link"><span class="guide-toc-num">14</span><span>Free Plan &amp; Unlimited</span></a></li>
+              <li><a href="#settings-privacy" class="guide-toc-link"><span class="guide-toc-num">15</span><span>Settings &amp; Privacy</span></a></li>
+              <li><a href="#troubleshooting" class="guide-toc-link"><span class="guide-toc-num">16</span><span>Tips &amp; Troubleshooting</span></a></li>
+              <li><a href="#feature-map" class="guide-toc-link"><span class="guide-toc-num">17</span><span>Feature Map</span></a></li>
+            </ul>
+          </nav>
+
+          <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border-glass);">
+            <div style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 8px;">Need assistance?</div>
+            <a href="mailto:gemshi@me.com" style="color: var(--accent-cyan); font-size: 0.86rem; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center; gap: 6px;">
+              <span>Email Support</span> →
+            </a>
+          </div>
+        </aside>
+
+        <!-- Main Documentation Chapters -->
+        <div class="guide-content" id="guideContent">
+
+          <!-- 01. Getting Started -->
+          <article class="guide-chapter" id="getting-started">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">01</span>
+              <h2 class="guide-chapter-title">Getting Started</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>What You Need</h3>
+              <ul>
+                <li><strong>Apple Device:</strong> iPhone or iPad running a recent iOS / iPadOS release (iOS 26+ recommended for on-device FoundationModels).</li>
+                <li><strong>iCloud (Optional but Recommended):</strong> Signed into your Apple account to enable automatic cross-device sync across iPhone and iPad without any third-party accounts.</li>
+                <li><strong>Apple Intelligence (Optional):</strong> Enabled on supported devices for auto-generated taxonomy tags, <em>Extract Core Info</em> (recipes, tutorials, takeaways), <em>Suggest a Shelf</em>, and natural language search.</li>
+              </ul>
+
+              <h3>First Launch Onboarding</h3>
+              <p>When you launch Clutch for the first time, you’ll be guided through a lightweight 5-step introduction:</p>
+              <ol>
+                <li><strong>Welcome:</strong> The principles of zero guilt, zero tracking, and on-device speed.</li>
+                <li><strong>Share Sheet Integration:</strong> How to save links and videos in one tap from Safari, YouTube, TikTok, and Instagram.</li>
+                <li><strong>Library Overview:</strong> Introducing non-destructive shelves and automatic media type filtering.</li>
+                <li><strong>Daily Digest:</strong> An audio overview of how unread articles transform into a morning spoken podcast.</li>
+                <li><strong>Get Started:</strong> Enter your inbox immediately.</li>
+              </ol>
+              <div class="guide-callout tip">
+                <span class="guide-callout-icon">💡</span>
+                <div>You can skip onboarding at any time. Clutch is instantly ready to capture and organize bookmarks.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02. Saving Links -->
+          <article class="guide-chapter" id="saving-links">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">02</span>
+              <h2 class="guide-chapter-title">Saving Links</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <p>Clutch is built around a non-negotiable principle: <strong>Never lose a save.</strong> If you’re offline, on airplane mode, or the destination server fails to parse, the URL lands safely in your local inbox immediately.</p>
+
+              <h3>Save from Another App (Fastest)</h3>
+              <ol>
+                <li>Open the article, video, or social post in Safari, YouTube, TikTok, Instagram, X, or Reddit.</li>
+                <li>Tap the system <strong>Share</strong> button.</li>
+                <li>Select <strong>Clutch</strong> from the Share Sheet.</li>
+                <li>Confirm — you’ll see a subtle checkmark confirmation in under a second.</li>
+              </ol>
+
+              <div class="guide-callout tip">
+                <span class="guide-callout-icon">🧭</span>
+                <div><strong>Safari Tip:</strong> Sharing directly from Safari sends rich DOM metadata, giving you clean titles and high-res thumbnails immediately. When sharing from social apps, Clutch captures the raw URL and completes the enrichment the moment you open the app.</div>
+              </div>
+
+              <h3>Save Inside the App</h3>
+              <ol>
+                <li>On the Home screen, tap the floating <strong>+</strong> button.</li>
+                <li>Select <strong>Add Link</strong>.</li>
+                <li>Paste or type any web link (optionally provide a custom title).</li>
+                <li>Optionally assign tags or a collection shelf right away.</li>
+                <li>Tap <strong>Save</strong>.</li>
+              </ol>
+
+              <h3>Gentle Clipboard Offer</h3>
+              <p>
+                When you return to Clutch with a valid web link on your iOS clipboard, you may see an unobtrusive <em>“Link on clipboard?”</em> banner. Tapping it opens the pre-filled Add Link modal. Clutch <strong>never</strong> silently monitors your clipboard in the background.
+              </p>
+
+              <h3>What Happens After You Save</h3>
+              <p>Bookmarks appear in your inbox immediately, then enrich locally in the background:</p>
+              <ul>
+                <li>Cleanses marketing trackers (UTM parameters, referral tags) from titles and URLs.</li>
+                <li>Extracts distraction-free offline article text.</li>
+                <li>Generates content-derived color tints and caches thumbnails.</li>
+                <li>Tags the content automatically using on-device Apple Intelligence.</li>
+              </ul>
+              <p>A soft shimmer indicates an item is still enriching. If a connection drops, a <strong>Tap to retry</strong> prompt appears.</p>
+
+              <h3>Zero Duplicate Clutter</h3>
+              <p>Re-saving an existing URL simply refreshes its position to the top of your inbox and informs you it was already saved. Your library never clutters with duplicate records.</p>
+            </div>
+          </article>
+
+          <!-- 03. Saving Notes -->
+          <article class="guide-chapter" id="saving-notes">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">03</span>
+              <h2 class="guide-chapter-title">Saving Notes</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <p>Notes in Clutch are first-class citizen items — not just annotations attached to links.</p>
+
+              <h3>Create a Standalone Note</h3>
+              <ol>
+                <li>On Home, tap <strong>+</strong> and select <strong>Add Note</strong>.</li>
+                <li>Type your thoughts, quick thoughts, or checklists.</li>
+                <li>Attach up to <strong>5 photos</strong> directly from your camera roll.</li>
+                <li>Apply <strong>Bold</strong> and <em>Italic</em> formatting inline.</li>
+                <li>Tap <strong>Done</strong> to save.</li>
+              </ol>
+
+              <h3>Share Plain Text as a Note</h3>
+              <p>Highlight text in Apple Notes or any other app and share to Clutch. If the text contains a URL, Clutch intelligently treats it as a bookmark; otherwise, it creates a rich local Note.</p>
+
+              <h3>Viewing &amp; Checklists</h3>
+              <p>Tap any note card to enter reader mode. Checklist items (formatted with brackets or bullet lines) can be checked off interactively right in the reader view.</p>
+            </div>
+          </article>
+
+          <!-- 04. Your Inbox (Home) -->
+          <article class="guide-chapter" id="inbox-home">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">04</span>
+              <h2 class="guide-chapter-title">Your Inbox (Home)</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <p>The Home view is your living reading pile — designed to feel welcoming, never overwhelming.</p>
+
+              <h3>Flexible Layout Modes</h3>
+              <ul>
+                <li><strong>Masonry Grid (Default):</strong> Responsive card sizes derived from real content aspect ratios (vertical TikToks, square IG photos, horizontal article cards).</li>
+                <li><strong>Compact List:</strong> Dense linear rows displaying thumbnail, platform badge, and clean title for high-speed scanning.</li>
+              </ul>
+              <p>Switch layouts instantly using the grid/list toggle in the top action bar.</p>
+
+              <h3>Card Gestures</h3>
+              <div class="guide-table-wrap">
+                <table class="guide-table">
+                  <thead>
+                    <tr>
+                      <th>Gesture</th>
+                      <th>Action</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="gesture-pill">Tap</span></td>
+                      <td><strong>Open</strong></td>
+                      <td>Opens distraction-free reader or launches host media player.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="gesture-pill">Swipe Right</span></td>
+                      <td><strong>Archive</strong></td>
+                      <td>Marks item as read and moves it gracefully into the Archive tray.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="gesture-pill">Swipe Left</span></td>
+                      <td><strong>Organize</strong></td>
+                      <td>Opens sheet to quickly toggle tags and collection shelves.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="gesture-pill">Long Press</span></td>
+                      <td><strong>Context Menu</strong></td>
+                      <td>Access full suite of actions (Pin, Remind, Share, Select, Delete).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>14-Day Gentle Aging</h3>
+              <p>
+                Bookmarks older than 14 days subtly reduce opacity and group into an <strong>Aging</strong> sub-section. A dismissible <strong>Tidy Up</strong> affordance allows you to batch-archive the entire aging pile in a single tap with full undo support.
+              </p>
+            </div>
+          </article>
+
+          <!-- 05. Reading & Watching -->
+          <article class="guide-chapter" id="reading-watching">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">05</span>
+              <h2 class="guide-chapter-title">Reading &amp; Watching</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Distraction-Free Reader</h3>
+              <p>Tap any text-based article or Reddit post to open Clutch’s custom reading surface:</p>
+              <ul>
+                <li><strong>Theme Controls:</strong> Choose between System, Warm Sepia, Crisp Paper, and OLED Black.</li>
+                <li><strong>Typography &amp; Spacing:</strong> Adjust font sizing, line height, and page margins.</li>
+                <li><strong>Reading Progress:</strong> Exact scroll position is remembered automatically.</li>
+                <li><strong>Completion Detection:</strong> Scrolling past ~95% prompts a gentle <em>“Looks like you finished this”</em> banner to archive in one tap.</li>
+                <li><strong>In-App Safari Reader Fallback:</strong> If a complex paywall or script interferes, tap the Safari icon for system web view.</li>
+              </ul>
+
+              <h3>Videos &amp; Social Feeds (YouTube, TikTok, Instagram, X)</h3>
+              <p>
+                Clutch displays high-resolution poster art and cleanly hands off playback to the native host application (e.g. YouTube app) or Safari. We intentionally do not embed clunky web players that trigger playback error 152.
+              </p>
+
+              <h3>Text Highlights &amp; Private Notes</h3>
+              <ul>
+                <li><strong>Highlights:</strong> Select any text inside the reader and tap <strong>Highlight</strong>. Highlights are stored locally on that bookmark.</li>
+                <li><strong>Private Bookmark Note:</strong> Scroll to the bottom of the article to jot down private thoughts (e.g. <em>“Send this to Marcus”</em>). Notes autosave as you type.</li>
+              </ul>
+
+              <h3>Extract Core Info (On-Device AI)</h3>
+              <p>Tap the sparkle extraction icon in the reader toolbar to parse unstructured articles into structured data:</p>
+              <div class="guide-table-wrap">
+                <table class="guide-table">
+                  <thead>
+                    <tr>
+                      <th>Content Type</th>
+                      <th>Extracted Output</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>🍳 <strong>Recipes</strong></td>
+                      <td>Prep / cook / total times, yields, categorized ingredients checklist, numbered steps.</td>
+                    </tr>
+                    <tr>
+                      <td>📖 <strong>Tutorials</strong></td>
+                      <td>Required tools/materials, time estimates, ordered actionable instructions.</td>
+                    </tr>
+                    <tr>
+                      <td>📝 <strong>Articles &amp; News</strong></td>
+                      <td>3 to 5 grounded executive summary bullets with zero hallucinated fluff.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+          <!-- 06. Organize: Tags & Collections -->
+          <article class="guide-chapter" id="organize">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">06</span>
+              <h2 class="guide-chapter-title">Organize: Tags &amp; Collections</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <div class="guide-callout note">
+                <span class="guide-callout-icon">💡</span>
+                <div>
+                  <strong>Core Rule:</strong><br>
+                  <strong>Tags classify</strong> (<em>“What is this?”</em> — e.g. Tech, Recipe, Finance).<br>
+                  <strong>Collections curate</strong> (<em>“Where do I want this?”</em> — e.g. Trip to Tokyo, Weekend Projects).
+                </div>
+              </div>
+
+              <h3>The Organize Sheet</h3>
+              <p>Swipe left on any card or select <strong>Organize</strong> from the long-press menu:</p>
+              <ul>
+                <li><strong>Tags Tab:</strong> Toggle automatic AI categories or add custom user labels.</li>
+                <li><strong>Collections Tab:</strong> Assign the item to one or more shelves, or create a <strong>New Collection</strong> with a custom SF Symbol.</li>
+              </ul>
+
+              <h3>Sub-Collections &amp; Covers</h3>
+              <ul>
+                <li>Shelves support <strong>one level of nesting</strong> (sub-collections) to keep navigation tidy.</li>
+                <li>Set a custom cover photo or let Clutch automatically generate a mosaic cover from member bookmarks.</li>
+                <li><strong>Non-Destructive Deletion:</strong> Deleting a collection shelf <em>never</em> deletes your bookmarks — only the organization group.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 07. Library Segments -->
+          <article class="guide-chapter" id="library">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">07</span>
+              <h2 class="guide-chapter-title">Library Segments</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <p>Navigate to the Library tab to browse your content across three dedicated views:</p>
+              <ul>
+                <li><strong>Shelves:</strong> View your custom curated collections with bookmark counts and cover art.</li>
+                <li><strong>Types:</strong> Automatic format classification filters (Articles, Videos, Social Feeds, Forums, Documents).</li>
+                <li><strong>Tags:</strong> Direct index to browse bookmarks by specific tags.</li>
+              </ul>
+
+              <h3>Suggest a Shelf (Apple Intelligence)</h3>
+              <p>
+                When you accumulate related unread bookmarks, a sparkle affordance appears in the Library. Tapping it generates a one-shot collection proposal with an AI-suggested title, symbol, and member items. Confirm with one tap or edit as you see fit.
+              </p>
+            </div>
+          </article>
+
+          <!-- 08. Search & Filters -->
+          <article class="guide-chapter" id="search-filters">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">08</span>
+              <h2 class="guide-chapter-title">Search &amp; Filters</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Natural Language Search</h3>
+              <p>Search using natural conversational phrases:</p>
+              <ul>
+                <li><em>"cookie recipes with butter"</em></li>
+                <li><em>"youtube videos saved last week"</em></li>
+                <li><em>"unread machine learning articles"</em></li>
+              </ul>
+              <p>
+                On devices with Apple Intelligence, queries compile into structured database predicates. On other devices, high-speed substring matching and tag indexing provide instant fallbacks.
+              </p>
+
+              <h3>Facet Filter Chips</h3>
+              <p>
+                Horizontal filter chips allow you to quickly narrow your view by Unread status, Content Types, or Tags. An active <em>"Filtered"</em> pill displays active criteria with a quick <strong>Clear</strong> button.
+              </p>
+            </div>
+          </article>
+
+          <!-- 09. Up Next & Reminders -->
+          <article class="guide-chapter" id="up-next-reminders">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">09</span>
+              <h2 class="guide-chapter-title">Up Next &amp; Reminders</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Up Next (Pinned Reads)</h3>
+              <p>
+                Pin up to <strong>3 priority items</strong> to the top of your inbox. Long press any card and tap <strong>Pin to Up Next</strong>. Pinned items stay anchored above your stream until unpinned or archived.
+              </p>
+
+              <h3>Local Reminders</h3>
+              <p>
+                Long press an item, tap <strong>Remind Me</strong>, and select a time (e.g. Tonight, Tomorrow morning, or Weekend). Clutch schedules a native iOS notification locally on your device. Tapping the reminder deep-links directly into the reader.
+              </p>
+
+              <h3>Multi-Select Mode</h3>
+              <p>
+                Long press and tap <strong>Select</strong> to enter batch mode. Tap cards to select them, then use the bottom action bar to batch-archive, delete, pin, or add to a collection shelf simultaneously.
+              </p>
+            </div>
+          </article>
+
+          <!-- 10. Daily Digest Audio -->
+          <article class="guide-chapter" id="daily-digest">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">10</span>
+              <h2 class="guide-chapter-title">Daily Digest (Spoken Audio)</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <p>
+                Clutch transforms unread articles saved over the past <strong>48 hours</strong> into a seamless, spoken morning briefing.
+              </p>
+
+              <h3>Starting Playback</h3>
+              <ul>
+                <li><strong>Inside App:</strong> Tap the More (<strong>…</strong>) menu on Home and choose <strong>Play Daily Digest</strong>.</li>
+                <li><strong>Control Center:</strong> Add the Clutch Play Digest control for instantaneous one-tap listening.</li>
+                <li><strong>Siri / Shortcuts:</strong> Simply speak: <em>“Hey Siri, play my Daily Digest.”</em></li>
+              </ul>
+
+              <h3>Audio Player Capabilities</h3>
+              <ul>
+                <li>Mini player docks at the bottom of the screen and expands into full player.</li>
+                <li>Chapter skip buttons to jump between story summaries.</li>
+                <li>Speed adjustment from <strong>0.75× to 2.0×</strong> with pitch preservation.</li>
+                <li>Full integration with Lock Screen, Dynamic Island, Control Center, AirPods gestures, and Apple CarPlay.</li>
+                <li>Incoming phone calls automatically pause playback cleanly and resume afterward.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 11. Apple Intelligence -->
+          <article class="guide-chapter" id="apple-intelligence">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">11</span>
+              <h2 class="guide-chapter-title">Apple Intelligence Architecture</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <p>
+                Every artificial intelligence feature in Clutch executes <strong>100% on-device</strong> using Apple’s system <code>FoundationModels</code>. No OpenAI API keys, no Anthropic servers, no tracking, and zero telemetry.
+              </p>
+
+              <div class="guide-table-wrap">
+                <table class="guide-table">
+                  <thead>
+                    <tr>
+                      <th>Feature</th>
+                      <th>With Apple Intelligence</th>
+                      <th>Fallback (Non-AI Mode)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Auto-Tagging</strong></td>
+                      <td>Contextual semantic categorization</td>
+                      <td>Heuristic domain &amp; metadata classification</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Summaries</strong></td>
+                      <td>Structured <em>At a Glance</em> bullets</td>
+                      <td>Smart clipped first-paragraph extraction</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Extract Core Info</strong></td>
+                      <td>Recipe / Tutorial / Takeaways sheets</td>
+                      <td>Control hidden; clean reader active</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Smart Search</strong></td>
+                      <td>Natural language predicate interpretation</td>
+                      <td>Substring keyword search &amp; tag filters</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Suggest a Shelf</strong></td>
+                      <td>Semantic grouping of related unread items</td>
+                      <td>Control hidden; manual shelves active</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="guide-callout note">
+                <span class="guide-callout-icon">🛡️</span>
+                <div>You can toggle individual AI capabilities on or off in <strong>Settings</strong> at any time.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Widgets, Siri & Spotlight -->
+          <article class="guide-chapter" id="widgets-siri">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">12</span>
+              <h2 class="guide-chapter-title">Widgets, Siri &amp; Spotlight</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Home Screen &amp; Lock Screen Widgets</h3>
+              <p>Add Clutch widgets in Small, Medium, or Large sizes:</p>
+              <ul>
+                <li><strong>Small:</strong> Displays active unread count and your top Up Next pinned item.</li>
+                <li><strong>Medium:</strong> Displays your top 3 unread stories with direct tap-to-read links.</li>
+                <li><strong>Large:</strong> Includes pinned reads, upcoming scheduled reminders, and a 1-tap <em>Play Digest</em> button.</li>
+              </ul>
+
+              <h3>Spotlight Indexing</h3>
+              <p>
+                Saved bookmarks are indexed directly into iOS CoreSpotlight. Search for an article from your iPhone home screen to deep-link directly into Clutch’s reader.
+              </p>
+
+              <h3>Siri &amp; App Shortcuts</h3>
+              <ul>
+                <li><em>“Save to Clutch”</em> — Saves the active URL or clipboard text.</li>
+                <li><em>“Play my Daily Digest”</em> — Begins continuous audio briefing immediately.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 13. Inbox Zero & Trash -->
+          <article class="guide-chapter" id="inbox-zero">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">13</span>
+              <h2 class="guide-chapter-title">Inbox Zero &amp; Trash</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Archive Mechanics</h3>
+              <p>
+                Archiving represents <em>“I’ve enjoyed and consumed this.”</em> Swipe right on any card or tap Archive in the reader. Archived items move out of your stream into the Archive view.
+              </p>
+
+              <h3>30-Day Trash Safety Net</h3>
+              <p>
+                Deleting an item sends it to the <strong>Trash</strong> for <strong>30 days</strong>. You can restore items at any point before the automatic purge. Nothing is permanently erased in fewer than two deliberate actions.
+              </p>
+
+              <h3>Optional Auto-Archive</h3>
+              <p>
+                If you prefer automated queue hygiene, enable auto-archive in Settings (options for 7, 14, or 30 days). This setting is <strong>off by default</strong> to respect user control.
+              </p>
+            </div>
+          </article>
+
+          <!-- 14. Free Plan & Unlimited -->
+          <article class="guide-chapter" id="free-unlimited">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">14</span>
+              <h2 class="guide-chapter-title">Free Plan &amp; Clutch Unlimited</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Free Plan (Fully Functional)</h3>
+              <ul>
+                <li><strong>Unlimited Saves:</strong> You can save any number of links without payment. Saves never fail or drop.</li>
+                <li><strong>20 Active Enriched Items:</strong> Your first 20 active saves receive full background AI enrichment, thumbnail caching, and offline reader mode.</li>
+                <li><strong>50 Unique Collection Members:</strong> Organize up to 50 items across shelves. Removing items always works.</li>
+              </ul>
+
+              <h3>Clutch Unlimited (One-Time Unlock)</h3>
+              <p>
+                To unlock unlimited background enrichment for all saves and unlimited collection shelf capacity, purchase <strong>Clutch Unlimited</strong>.
+              </p>
+              <ul>
+                <li>Sold as a single StoreKit 2 non-consumable purchase (<code>pocketbookmark.unlimited</code>).</li>
+                <li><strong>Zero subscriptions.</strong> Pay once, own forever.</li>
+                <li>Includes Family Sharing and seamless purchase restoration on any new device.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 15. Settings & Privacy -->
+          <article class="guide-chapter" id="settings-privacy">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">15</span>
+              <h2 class="guide-chapter-title">Settings &amp; Privacy</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Sovereign Privacy Architecture</h3>
+              <ul>
+                <li><strong>Zero Accounts:</strong> You never create an account, password, or profile.</li>
+                <li><strong>Zero Servers:</strong> There is no Clutch backend receiving your bookmark database.</li>
+                <li><strong>Zero Telemetry:</strong> No analytics trackers, ad SDKs, or third-party behavioral profiling.</li>
+              </ul>
+
+              <h3>iCloud Sync Status</h3>
+              <p>
+                When signed into Apple iCloud, your library synchronizes automatically across devices via SwiftData and CloudKit under Apple’s end-to-end encrypted terms.
+              </p>
+            </div>
+          </article>
+
+          <!-- 16. Tips & Troubleshooting -->
+          <article class="guide-chapter" id="troubleshooting">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">16</span>
+              <h2 class="guide-chapter-title">Tips &amp; Troubleshooting</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <h3>Pro Tips</h3>
+              <ul>
+                <li><strong>Safari First:</strong> Share from Safari when possible for the richest immediate thumbnail and clean article DOM.</li>
+                <li><strong>Pin 3 Reads:</strong> Keep your top 3 reads in <strong>Up Next</strong> so you always know what to read next.</li>
+                <li><strong>Audio Commutes:</strong> Listen to the Daily Digest on morning dog walks or commutes.</li>
+                <li><strong>Offline Languages:</strong> In Settings, download offline speech models (~99 MB English or ~401 MB Multilingual/Arabic) for Natural Voice synthesis without internet.</li>
+              </ul>
+
+              <h3>Card Stuck on "Enriching"?</h3>
+              <ol>
+                <li>Open the main app (enrichment executes in the app container, not the Share Sheet).</li>
+                <li>Tap <strong>Tap to retry</strong> on the card or long press and select <strong>Retry Enrichment</strong>.</li>
+                <li>Check your network connection. Links shared in Airplane Mode queue up and process as soon as connectivity resumes.</li>
+              </ol>
+
+              <h3>Share Sheet Missing Clutch?</h3>
+              <p>
+                Tap <strong>Share</strong> in Safari &gt; scroll right on the app icons &gt; tap <strong>More</strong> &gt; tap <strong>Edit</strong> &gt; enable <strong>Clutch</strong> and add it to Favorites.
+              </p>
+
+              <h3>Widget Appears Stale?</h3>
+              <p>
+                Open the app once to trigger an immediate App Group database reload, or remove and re-add the widget on your Home Screen.
+              </p>
+            </div>
+          </article>
+
+          <!-- 17. Feature Map -->
+          <article class="guide-chapter" id="feature-map">
+            <div class="guide-chapter-header">
+              <span class="guide-chapter-badge">17</span>
+              <h2 class="guide-chapter-title">Feature Map (At a Glance)</h2>
+            </div>
+            <div class="guide-chapter-body">
+              <div class="guide-table-wrap">
+                <table class="guide-table">
+                  <thead>
+                    <tr>
+                      <th>Area</th>
+                      <th>Supported Features</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Capture</strong></td>
+                      <td>iOS Share Sheet, In-App Add Link, Clipboard banner offer, Share text to Note.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Inbox</strong></td>
+                      <td>Masonry grid / list switcher, swipe gestures, 14-day gentle aging, 1-tap tidy up.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Reader</strong></td>
+                      <td>4 visual themes, reading progress, highlights, private notes, Safari Reader mode.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Media</strong></td>
+                      <td>Poster extraction + native host app launch (YouTube, TikTok, Instagram, X).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Organize</strong></td>
+                      <td>AI closed taxonomy, custom tags, nested sub-shelves, photo &amp; mosaic covers.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Library</strong></td>
+                      <td>Shelves hub, automatic Type filters, Tags index, Suggest a Shelf AI proposal.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Focus</strong></td>
+                      <td>Up Next (3 pinned), Remind Me local notifications, Batch select mode.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Audio</strong></td>
+                      <td>Daily Digest audio synthesis, CarPlay, lock screen controls, Natural Voice.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>System</strong></td>
+                      <td>Lock/Home Screen widgets, Spotlight indexing, Siri &amp; Shortcuts integration.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Privacy</strong></td>
+                      <td>100% on-device, zero accounts, zero trackers, private iCloud sync.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="guide-back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div class="brand-icon-wrapper" style="width: 28px; height: 28px;">
+              <img src="images/PocketbookamLogo.svg" alt="Clutch Icon" class="brand-icon-img" width="28" height="28">
+            </div>
+            <strong style="color: var(--text-primary); font-size: 1.05rem;">Clutch</strong>
+          </div>
+          <p style="color: var(--text-secondary); max-width: 320px; line-height: 1.5; font-size: 0.88rem;">
+            Save anything from anywhere in under a second, and never feel guilty about the pile again.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html#features" class="footer-link">Features</a></li>
+            <li><a href="index.html#intelligence" class="footer-link">Apple Intelligence</a></li>
+            <li><a href="index.html#audio-digest" class="footer-link">Audio Digest</a></li>
+            <li><a href="index.html#collections" class="footer-link">Collections</a></li>
+            <li><a href="help.html" class="footer-link" style="color: var(--text-primary); font-weight: 600;">User Guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Legal &amp; Guidelines</div>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms of Use</a></li>
+            <li><a href="help.html" class="footer-link">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <ul class="footer-links-list">
+            <li><a href="mailto:gemshi@me.com" class="footer-link">Developer Support</a></li>
+            <li><a href="index.html#download" class="footer-link">TestFlight Beta</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar">
+        <div>
+          © 2026 Clutch. Published by <a href="https://gemshi.com/" target="_blank" rel="noopener noreferrer" class="footer-link" style="text-decoration: underline; text-underline-offset: 3px;">Gemshi</a>. Built with precision for iOS 26.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="privacy.html" class="footer-link">Privacy</a>
+          <a href="terms.html" class="footer-link">Terms of Use</a>
+          <a href="help.html" class="footer-link">Help</a>
+          <a href="index.html" class="footer-link">Home</a>
+        </div>
+        <div>
+          Apple, iPhone, SwiftUI, SwiftData, and Apple Intelligence are trademarks of Apple Inc.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Theme Toggle, Guide Search & Scrollspy -->
+  <script src="js/main.js"></script>
+  <script>
+    // Guide Interactive Features: Live Search, Scrollspy, Back to Top
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('guideSearchInput');
+      const searchClear = document.getElementById('guideSearchClear');
+      const chapters = document.querySelectorAll('.guide-chapter');
+      const tocLinks = document.querySelectorAll('.guide-toc-link');
+      const backToTopBtn = document.getElementById('backToTopBtn');
+
+      // 1. Live Instant Search Filter
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase().trim();
+          if (query.length > 0) {
+            searchClear.style.display = 'block';
+          } else {
+            searchClear.style.display = 'none';
+          }
+
+          chapters.forEach(chapter => {
+            const text = chapter.innerText.toLowerCase();
+            if (query === '' || text.includes(query)) {
+              chapter.style.display = 'block';
+            } else {
+              chapter.style.display = 'none';
+            }
+          });
+        });
+
+        searchClear.addEventListener('click', () => {
+          searchInput.value = '';
+          searchClear.style.display = 'none';
+          chapters.forEach(c => c.style.display = 'block');
+          searchInput.focus();
+        });
+      }
+
+      // 2. ScrollSpy for Sticky Table of Contents
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            tocLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, {
+        rootMargin: '-100px 0px -60% 0px',
+        threshold: 0
+      });
+
+      chapters.forEach(chapter => observer.observe(chapter));
+
+      // 3. Floating Back to Top Button
+      if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 450) {
+            backToTopBtn.classList.add('visible');
+          } else {
+            backToTopBtn.classList.remove('visible');
+          }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
