@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Clutch — Save Anything in Under a Second. Powered by Apple Intelligence.</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Clutch — Save Anything in Under a Second. Powered by Apple Intelligence.">
+  <meta name="description"
+    content="A frictionless, visually stunning iOS 26 app to save, organize, and consume content from across the web. Zero accounts, zero cloud servers, 100% on-device intelligence.">
+  <meta name="keywords"
+    content="Clutch, iOS 26, bookmark manager, read it later, Apple Intelligence, FoundationModels, SwiftUI, SwiftData, distraction-free reader, daily digest audio">
+  <meta name="author" content="Gemshi">
+  <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F5F5F7" media="(prefers-color-scheme: light)">
+
+  <!-- Apple Specific Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Clutch">
+  <link rel="apple-touch-icon" href="images/PocketbookamLogo.svg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gemshi.github.io/pocketbookmark/">
+  <meta property="og:title" content="Clutch — Save Anything in Under a Second.">
+  <meta property="og:description"
+    content="Never feel guilty about the pile again. Clean layouts, on-device summaries, and a personal morning podcast from your reading backlog.">
+  <meta property="og:image" content="images/HomeviewScrn.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Clutch — Save Anything in Under a Second.">
+  <meta name="twitter:description"
+    content="The privacy-first content sanctuary for iOS 26. 100% on-device Apple Intelligence, distraction-free reader, and Daily Digest audio.">
+  <meta name="twitter:image" content="images/HomeviewScrn.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/PocketbookamLogo.svg">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org SoftwareApplication JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Clutch",
+    "operatingSystem": "iOS 26.0+",
+    "applicationCategory": "ProductivityApplication",
+    "description": "Frictionless, on-device content sanctuary to save, organize, and consume media with Apple Intelligence.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Ambient Liquid Caustic Glow Canvas -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Global Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand-link" id="headerBrandLink" aria-label="Clutch Home">
+        <div class="brand-icon-wrapper">
+          <img src="images/PocketbookamLogo.svg" alt="Clutch Icon" class="brand-icon-img" width="36"
+            height="36">
+        </div>
+        <span>Clutch</span>
+        <span class="brand-badge">iOS 26</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#intelligence" class="nav-link">Intelligence</a></li>
+          <li><a href="#audio-digest" class="nav-link">Audio Digest</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#privacy" class="nav-link">Privacy</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark and Light Mode"
+          title="Toggle Theme">
+          <svg id="themeIconSun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Beta CTA -->
+        <a href="#download" class="btn btn-primary btn-sm open-beta-modal" id="headerCtaBtn">
+          <span>Join Beta</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#intelligence" class="nav-link">Apple Intelligence</a>
+    <a href="#audio-digest" class="nav-link">Audio Digest</a>
+    <a href="#collections" class="nav-link">Collections & Shelves</a>
+    <a href="#privacy" class="nav-link">Architecture & Privacy</a>
+    <a href="#roadmap" class="nav-link">Production Roadmap</a>
+    <a href="#faq" class="nav-link">FAQ & Support</a>
+    <div style="margin-top: 16px;">
+      <a href="#download" class="btn btn-primary btn-lg open-beta-modal" style="width: 100%;">Get TestFlight Beta</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Section 01: Hero Showcase
+         ========================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <!-- Announcement Pill -->
+          <a href="#roadmap" class="pill-badge" id="heroPillBadge">
+            <span class="pulsing-dot"></span>
+            <span>Built for iOS 26 • On-Device Apple Intelligence</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+
+          <!-- Hero Headline -->
+          <h1 class="hero-title" id="heroMainHeading">
+            Save anything in a second.<br>
+            <span class="gradient-text">Never feel guilty about the pile again.</span>
+          </h1>
+
+          <!-- Hero Subtitle -->
+          <p class="hero-subtitle">
+            Clutch turns chaotic links, videos, and articles into a calm, distraction-free sanctuary. Zero
+            accounts. Zero cloud servers. Powered by 100% on-device intelligence.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#download" class="btn btn-primary btn-lg open-beta-modal" id="heroPrimaryCta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.92-.92.04-2.03.62-2.69 1.39-.58.68-1.1 1.77-.96 2.82 1.03.08 2.08-.52 2.71-1.29z" />
+              </svg>
+              <span>Download on TestFlight</span>
+            </a>
+
+            <a href="#audio-digest" class="btn btn-secondary btn-lg" id="heroSecondaryCta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+              <span>Listen to Daily Digest</span>
+            </a>
+          </div>
+
+          <!-- Specs Strip -->
+          <div class="hero-meta-strip">
+            <div class="hero-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>SwiftData Local</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Zero Accounts</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100% Offline Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Device Stage -->
+        <div class="hero-stage-container" id="heroStage">
+          <!-- Floating Glass Hotspots -->
+          <div class="floating-hotspot hotspot-1">
+            <div class="hotspot-icon" style="background: rgba(48, 209, 88, 0.18); color: #30D158;">⚡️</div>
+            <div>
+              <div style="color: var(--text-primary);">Saved in 0.6s</div>
+              <div style="font-size: 0.72rem; color: var(--text-secondary);">From Safari, X, TikTok, IG</div>
+            </div>
+          </div>
+
+          <div class="floating-hotspot hotspot-2">
+            <div class="hotspot-icon" style="background: rgba(10, 132, 255, 0.18); color: #0A84FF;">✨</div>
+            <div>
+              <div style="color: var(--text-primary);">Apple Intelligence</div>
+              <div style="font-size: 0.72rem; color: var(--text-secondary);">On-Device FoundationModels</div>
+            </div>
+          </div>
+
+          <div class="floating-hotspot hotspot-3">
+            <div class="hotspot-icon" style="background: rgba(255, 159, 10, 0.18); color: #FF9F0A;">🔍</div>
+            <div>
+              <div style="color: var(--text-primary);">Natural Language</div>
+              <div style="font-size: 0.72rem; color: var(--text-secondary);">"that pasta video from last week"</div>
+            </div>
+          </div>
+
+          <!-- Photorealistic iPhone 16/17 Pro Frame -->
+          <div class="device-frame-wrapper" id="deviceFrame">
+            <div class="iphone-pro-frame">
+              <!-- Dynamic Island Capsule -->
+              <div class="device-dynamic-island">
+                <div class="di-camera"></div>
+                <div class="di-sensor"></div>
+              </div>
+
+              <!-- Real App Capture Screen -->
+              <div class="device-screen-container">
+                <img src="images/HomeviewScrn.webp" alt="Clutch Masonry Inbox on iPhone"
+                  class="device-screen-img" width="373" height="808" loading="eager">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 02: Library Views & Ingestion Engine
+         ========================================================================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Universal Canvas</div>
+          <h2 class="section-title">Your library. Your rules.</h2>
+          <p class="section-desc">
+            The saved content is the product — our UI is a frame, never a painting. Browse an asymmetrical masonry grid
+            sized by true aspect ratios, or collapse into a dense high-volume list.
+          </p>
+
+          <!-- Interactive View Switcher Segmented Control -->
+          <div class="segmented-pill-wrapper" style="margin-top: 28px;">
+            <button class="segmented-pill-btn active" id="btnViewMasonry">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="9"></rect>
+                <rect x="14" y="3" width="7" height="5"></rect>
+                <rect x="14" y="12" width="7" height="9"></rect>
+                <rect x="3" y="16" width="7" height="5"></rect>
+              </svg>
+              <span>Liquid Masonry</span>
+            </button>
+            <button class="segmented-pill-btn" id="btnViewList">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+              <span>Compact List</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive View Showcase Container -->
+        <div class="view-showcase-container">
+          <!-- Left: Architectural Pillars -->
+          <div class="showcase-features-list">
+            <div class="feature-point-card active" id="cardFeat1">
+              <div class="feature-point-header">
+                <span class="feature-number">01</span>
+                <h3 class="feature-point-title">Content-Derived Liquid Glass</h3>
+              </div>
+              <p class="feature-point-desc">
+                There is no fixed brand color. Dominant color is extracted once at ingest using Core Image
+                <code>CIKMeans</code> and subtly tints backgrounds, glass borders, and reader chrome at an ultra-fine
+                18% opacity.
+              </p>
+            </div>
+
+            <div class="feature-point-card" id="cardFeat2">
+              <div class="feature-point-header">
+                <span class="feature-number">02</span>
+                <h3 class="feature-point-title">Zero-Friction Ingestion Engine</h3>
+              </div>
+              <p class="feature-point-desc">
+                Save from Safari, X, TikTok, Instagram, Reddit, or YouTube under 120MB memory ceilings. Saves write
+                immediately to a shared SwiftData store in under a second — enrichment happens quietly in the
+                background.
+              </p>
+            </div>
+
+            <div class="feature-point-card" id="cardFeat3">
+              <div class="feature-point-header">
+                <span class="feature-number">03</span>
+                <h3 class="feature-point-title">Gestures Over Buttons</h3>
+              </div>
+              <p class="feature-point-desc">
+                Swipe right to archive. Swipe left to organize into collections. Long press for instant actions: Listen
+                to Summary, Extract Core Info, Copy Link, and Share.
+              </p>
+            </div>
+
+            <div class="feature-point-card" id="cardFeat4">
+              <div class="feature-point-header">
+                <span class="feature-number">04</span>
+                <h3 class="feature-point-title">60fps Shortest-Column Layout</h3>
+              </div>
+              <p class="feature-point-desc">
+                Custom shortest-column <code>LazyVStack</code> masonry avoids eager layout measuring, sustaining 60
+                frames per second past thousands of saved items.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Device Frame -->
+          <div class="interactive-display-card">
+            <div class="interactive-screen-frame">
+              <div class="screen-fade-view" id="viewScreenMasonry">
+                <img src="images/HomeviewScrn.webp" alt="Masonry Grid View in Clutch" width="373" height="808"
+                  loading="lazy">
+              </div>
+              <div class="screen-fade-view hidden" id="viewScreenList">
+                <img src="images/homeviewListtype.webp" alt="Compact List View in Clutch" width="282"
+                  height="610" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 03: Apple Intelligence Deep Dive
+         ========================================================================== -->
+    <section class="section" id="intelligence">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Apple Intelligence Layer</div>
+          <h2 class="section-title">Artificial Intelligence. <br><span class="gradient-accent">Genuine Privacy.</span>
+          </h2>
+          <p class="section-desc">
+            All AI runs entirely on-device via Apple's <code>FoundationModels</code>. No OpenAI, no Anthropic, no
+            telemetry, and zero network calls.
+          </p>
+        </div>
+
+        <div class="intelligence-grid">
+          <!-- Left: Reader Mode Showcase with Interactive Web vs. App Toggle -->
+          <div class="intelligence-card-wrap">
+            <div class="reader-mockup-container">
+              <!-- Floating Mode Pill -->
+              <div class="reader-mode-pill clean" id="readerModePill">
+                <span class="pill-dot"></span>
+                <span class="pill-text" id="readerPillText">✨ Clutch Clean Reader</span>
+              </div>
+
+              <!-- Interactive iPhone Device Mockup -->
+              <div class="reader-mockup-frame" id="readerMockupFrame" role="button" tabindex="0"
+                aria-label="Click to toggle between Web Article and Clean Reader"
+                title="Click to toggle between Web Article and Clean Reader">
+                <img src="images/Clutchview.webp" alt="Clutch Clean Reader View with At a Glance Recipe Summary"
+                  class="reader-screen-view active" id="readerScreenClean" width="360" height="782" loading="eager">
+                <img src="images/webView.webp" alt="Standard Safari Web View with Ads and Backstory"
+                  class="reader-screen-view hidden" id="readerScreenRaw" width="360" height="782" loading="lazy">
+              </div>
+
+              <!-- Interactive Hint -->
+              <div class="reader-tap-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <polyline points="9 21 3 21 3 15"></polyline>
+                  <line x1="21" y1="3" x2="14" y2="10"></line>
+                  <line x1="3" y1="21" x2="10" y2="14"></line>
+                </svg>
+                <span>Click image or buttons to switch views</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive "Cut the Fluff" Simulator -->
+          <div class="fluff-simulator-card">
+            <div class="fluff-sim-header">
+              <div class="fluff-badge">
+                <span>⚡️ Interactive Simulator</span>
+              </div>
+              <div class="fluff-sim-toggle-group">
+                <button class="fluff-toggle-btn" id="btnSimRaw">Web Article</button>
+                <button class="fluff-toggle-btn active" id="btnSimClean">Clean Reader</button>
+              </div>
+            </div>
+
+            <!-- Dynamic Simulator Box -->
+            <div class="sim-content-box" id="simContentBox">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span
+                    style="background: rgba(48, 209, 88, 0.15); color: #30D158; padding: 2px 8px; border-radius: 99px; font-size: 0.78rem; font-weight: 700;">✨
+                    AT A GLANCE • FoundationModels</span>
+                  <span style="font-size: 0.8rem; color: var(--text-tertiary);">Recipe Classified</span>
+                </div>
+                <span style="font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">joyfoodsunshine.com</span>
+              </div>
+              <h4 style="color: var(--text-primary); margin-bottom: 4px;">The Best Chocolate Chip Cookie Recipe Ever</h4>
+              <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 12px;">Laura Sandford • Prep: 10 mins • Cook: 8 mins • Total: 30 mins • Yield: 36</p>
+              <div style="margin-bottom: 12px; line-height: 1.5; background: rgba(255,255,255,0.035); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+                <strong style="color: var(--text-primary); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px;">Summary:</strong><br>
+                Preheat oven to 375°F. Line three baking sheets with parchment paper. Cream butter and sugars, beat in eggs and vanilla, followed by dry ingredients and chocolate chips.
+              </div>
+              <div style="line-height: 1.6; font-size: 0.86rem;">
+                <strong style="color: var(--text-primary);">Ingredients Checklist:</strong><br>
+                <span style="color: #30D158; font-weight: 700;">✓</span> 1 cup salted butter (softened)<br>
+                <span style="color: var(--text-secondary);">○</span> 1 cup granulated sugar • 1 cup light brown sugar (packed)<br>
+                <span style="color: var(--text-secondary);">○</span> 2 tsp pure vanilla extract • 2 large eggs • 3 cups all-purpose flour
+              </div>
+            </div>
+
+            <div class="sim-meta-stats">
+              <div>Length: <strong id="simWordCount" style="color: var(--text-primary);">118 words</strong></div>
+              <div>Estimated: <strong id="simReadTime" style="color: var(--text-primary);">30 sec glance</strong></div>
+              <div>Reduction: <strong id="simSavingsStat" style="color: var(--accent-mint);">96% fluff
+                  eliminated</strong></div>
+            </div>
+
+            <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div
+                style="padding: 16px; border-radius: var(--radius-sm); background: var(--bg-surface-elevated); border: 1px solid var(--border-glass);">
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px;">🏷️
+                  Closed Taxonomy</div>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">No synonym sprawl. Strict
+                  <code>@Guide</code> constraints ensure organized filtering.
+                </div>
+              </div>
+              <div
+                style="padding: 16px; border-radius: var(--radius-sm); background: var(--bg-surface-elevated); border: 1px solid var(--border-glass);">
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px;">🔎
+                  2-Layer Search</div>
+                <div style="font-size: 0.8rem; color: var(--text-secondary);">Natural language <code>#Predicate</code>
+                  parsing + <code>NLEmbedding</code> vector ranking.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 04: The Daily Digest Audio Engine
+         ========================================================================== -->
+    <section class="section audio-digest-section" id="audio-digest">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Audio Engine</div>
+          <h2 class="section-title">Your morning commute podcast.<br><span class="gradient-coral">Generated from your
+              saves.</span></h2>
+          <p class="section-desc">
+            "Play Daily Digest" gathers unread articles from the last 48 hours, map-reduces them into a cohesive spoken
+            script with the on-device model, and narrates them aloud.
+          </p>
+        </div>
+
+        <div class="audio-digest-container">
+          <!-- Left: Audio Engine Specs -->
+          <div>
+            <div style="margin-bottom: 32px;">
+              <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Segmented Chapter Narration</h3>
+              <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.98rem;">
+                Scripts are segmented per article, not a single opaque audio blob. Skip forward or back between stories,
+                view full lock-screen Now Playing metadata, and tap through straight to the source article in the
+                reader.
+              </p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div
+                  style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 55, 95, 0.15); color: #FF375F; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  ✓</div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">Lock Screen & Dynamic Island
+                    Ready</strong>
+                  <div style="color: var(--text-secondary); font-size: 0.88rem;">Integrated with
+                    <code>MPNowPlayingInfoCenter</code> and <code>MPRemoteCommandCenter</code> for CarPlay and AirPods.
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div
+                  style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 55, 95, 0.15); color: #FF375F; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  ✓</div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">Survives Screen Lock</strong>
+                  <div style="color: var(--text-secondary); font-size: 0.88rem;">Configured with
+                    <code>AVAudioSession.playback</code> so narration never halts when you lock your iPhone.
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 14px; align-items: flex-start;">
+                <div
+                  style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 55, 95, 0.15); color: #FF375F; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  ✓</div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">Personal Voice Opt-In</strong>
+                  <div style="color: var(--text-secondary); font-size: 0.88rem;">Optionally narrate your daily queue
+                    using your own cloned Apple Personal Voice via <code>AVSpeechSynthesizer</code>.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Audio Simulator Card -->
+          <div class="audio-player-sim-card">
+            <!-- Pulsing Circular Waveform -->
+            <div class="audio-sim-waveform-circle">
+              <div class="waveform-bar-group">
+                <div class="waveform-bar"></div>
+                <div class="waveform-bar"></div>
+                <div class="waveform-bar"></div>
+                <div class="waveform-bar"></div>
+                <div class="waveform-bar"></div>
+              </div>
+            </div>
+
+            <!-- Dynamic Story Details -->
+            <h3 class="audio-sim-title" id="audioStoryTitle">If AI really could kill us all, why give any ground to
+              China?</h3>
+            <div class="audio-sim-subtitle" id="audioStoryCount">Story 1 of 4</div>
+
+            <!-- Scrubber Track -->
+            <div class="audio-scrubber-track" id="audioScrubberTrack">
+              <div class="audio-scrubber-fill" style="width: 25%;"></div>
+            </div>
+
+            <div class="audio-time-row">
+              <span id="audioCurrentTime">0:22</span>
+              <span id="audioTotalTime">1:30</span>
+            </div>
+
+            <!-- Audio Controls -->
+            <div class="audio-sim-controls">
+              <button class="audio-ctrl-btn" id="audioPrevBtn" aria-label="Previous Story">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="3"></line>
+                </svg>
+              </button>
+
+              <button class="play-pause-circle" id="audioPlayPauseBtn" aria-label="Play or Pause Digest">
+                <svg id="playIcon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+                  style="margin-left: 2px;">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg id="pauseIcon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"
+                  style="display: none;">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+
+              <button class="audio-ctrl-btn" id="audioNextBtn" aria-label="Next Story">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="3"></line>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Speed Pills -->
+            <div class="audio-speed-pills">
+              <button class="speed-pill-btn" data-speed="0.75">0.75x</button>
+              <button class="speed-pill-btn active" data-speed="1.0">1x</button>
+              <button class="speed-pill-btn" data-speed="1.2">1.2x</button>
+              <button class="speed-pill-btn" data-speed="1.5">1.5x</button>
+              <button class="speed-pill-btn" data-speed="2.0">2x</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 05: Collections & Organization
+         ========================================================================== -->
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Intelligent Curation</div>
+          <h2 class="section-title">Tags classify. Collections curate.</h2>
+          <p class="section-desc">
+            Tags answer <em>"What is this?"</em> with an automated shared vocabulary. Collections answer <em>"Where do I
+              want this?"</em> with shelves you own.
+          </p>
+
+          <div class="segmented-pill-wrapper" style="margin-top: 28px;">
+            <button class="segmented-pill-btn active" id="colTabShelves">
+              <span>Shelves</span>
+            </button>
+            <button class="segmented-pill-btn" id="colTabTypes">
+              <span>Types</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="collections-tab-card">
+          <div class="collections-layout">
+            <div>
+              <h3 id="colActiveTitle" style="font-size: 1.5rem; margin-bottom: 14px;">User Shelves & "Suggest a Shelf"
+              </h3>
+              <p id="colActiveDesc" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                Curate personal shelves like Recipes, News, or Trip Planning. When Apple Intelligence detects related
+                unread items, the sparkle action gently offers a one-tap shelf suggestion.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div
+                  style="padding: 16px; border-radius: var(--radius-sm); background: var(--bg-surface-elevated); border: 1px solid var(--border-glass);">
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">One Sheet, Two Jobs</strong>
+                  <div style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 4px;">Swipe-left on any card
+                    to manage closed AI tags and shelf membership simultaneously.</div>
+                </div>
+                <div
+                  style="padding: 16px; border-radius: var(--radius-sm); background: var(--bg-surface-elevated); border: 1px solid var(--border-glass);">
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">Non-Destructive Shelves</strong>
+                  <div style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 4px;">Deleting a collection
+                    shelf never deletes your saved bookmarks — only the grouping.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen Viewport -->
+            <div class="collections-screen-frame">
+              <img src="images/CollectionpageScrn.webp" alt="Collections Hub in Clutch" id="colScreenImg"
+                width="292" height="632" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 06: Inbox Zero & Gentle Lifecycle
+         ========================================================================== -->
+    <section class="section" id="inbox-zero">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Inbox Zero Mechanics</div>
+          <h2 class="section-title">Aging, not deleting.</h2>
+          <p class="section-desc">
+            Nobody trusts an app that deletes their stuff. Clutch drains your queue through natural reading
+            habits and gentle lifecycle management — zero guilt streaks.
+          </p>
+        </div>
+
+        <div class="inbox-zero-grid">
+          <div class="zero-card">
+            <div class="zero-card-icon" style="color: #FF9F0A;">⏳</div>
+            <h3 class="zero-card-title">14-Day Gentle Aging</h3>
+            <p class="zero-card-desc">
+              Items older than 14 days fade slightly and group into an "Aging" section. A periodic, dismissible "Tidy
+              Up" affordance offers one-tap batch archive with full undo support.
+            </p>
+          </div>
+
+          <div class="zero-card">
+            <div class="zero-card-icon" style="color: #30D158;">📖</div>
+            <h3 class="zero-card-title">Auto-Archive on Completion</h3>
+            <p class="zero-card-desc">
+              Scrolling past 95% of an article or finishing a video prompts to archive it inline. Your queue naturally
+              drains as you enjoy content, without feeling like homework.
+            </p>
+          </div>
+
+          <div class="zero-card">
+            <div class="zero-card-icon" style="color: #0A84FF;">🛡️</div>
+            <h3 class="zero-card-title">30-Day Trash Safety Net</h3>
+            <p class="zero-card-desc">
+              Nothing is ever permanently deleted in fewer than two deliberate steps. Deleted items rest safely in Trash
+              for 30 days before automatic purge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 07: Sovereign Architecture Comparison
+         ========================================================================== -->
+    <section class="section" id="privacy">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Sovereign Engineering</div>
+          <h2 class="section-title">Built for Privacy Purists</h2>
+          <p class="section-desc">
+            Compare Clutch's on-device architecture against traditional cloud-based bookmark aggregators.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature / Principle</th>
+                <th class="col-highlight">Clutch</th>
+                <th>Traditional Cloud Bookmarkers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Account Requirement</strong></td>
+                <td class="col-highlight"><span class="status-badge-green">● Zero Accounts Required</span></td>
+                <td><span class="status-badge-red">✕ Mandatory Sign-up & Login</span></td>
+              </tr>
+              <tr>
+                <td><strong>AI Processing</strong></td>
+                <td class="col-highlight"><span class="status-badge-green">● 100% On-Device (FoundationModels)</span>
+                </td>
+                <td><span class="status-badge-red">✕ Third-Party Cloud LLM APIs</span></td>
+              </tr>
+              <tr>
+                <td><strong>Telemetry & Trackers</strong></td>
+                <td class="col-highlight"><span class="status-badge-green">● 0 Analytics, 0 Trackers</span></td>
+                <td><span class="status-badge-red">✕ Reading Habits Monetized</span></td>
+              </tr>
+              <tr>
+                <td><strong>Offline Canvas</strong></td>
+                <td class="col-highlight"><span class="status-badge-green">● 100% Offline (SQLite + Storage)</span></td>
+                <td><span class="status-badge-red">✕ Partial or Cloud-Dependent</span></td>
+              </tr>
+              <tr>
+                <td><strong>Capture Speed</strong></td>
+                <td class="col-highlight"><span class="status-badge-green">● Under 1 Second (Share Extension)</span>
+                </td>
+                <td><span class="status-badge-red">✕ Network Round-trip Scrape</span></td>
+              </tr>
+              <tr>
+                <td><strong>Platform Language</strong></td>
+                <td class="col-highlight"><span class="status-badge-green">● Apple HIG Liquid Glass (Swift 6)</span>
+                </td>
+                <td><span class="status-badge-red">✕ Generic Cross-Platform WebViews</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 08: Production Roadmap & Release Phases
+         ========================================================================== -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Transparency in Public</div>
+          <h2 class="section-title">Production Phases & Roadmap</h2>
+          <p class="section-desc">
+            Directly synced with our development milestones across Phases 0 through 42.
+          </p>
+        </div>
+
+        <div class="roadmap-timeline-grid">
+          <div class="phase-card">
+            <span class="phase-tag tag-done">Phases 0–10 • Shipped</span>
+            <h3 class="phase-title">Core Engine & Canvas</h3>
+            <p class="phase-desc">
+              SwiftData App Group container, 1-second Share Extension, domain metadata triage, and shortest-column
+              masonry grid.
+            </p>
+          </div>
+
+          <div class="phase-card">
+            <span class="phase-tag tag-done">Phases 12–23 • Shipped</span>
+            <h3 class="phase-title">AI & Audio Hardening</h3>
+            <p class="phase-desc">
+              On-device <code>FoundationModels</code> tagging, recipe extraction, <code>AVSpeechSynthesizer</code> daily
+              digest, and Collections.
+            </p>
+          </div>
+
+          <div class="phase-card active-phase">
+            <span class="phase-tag tag-active">Phase 11 • Current Beta</span>
+            <h3 class="phase-title">TestFlight Public Testing</h3>
+            <p class="phase-desc">
+              On-device smoke tests, App Group verification across iOS 26 builds, and TestFlight release distribution.
+            </p>
+          </div>
+
+          <div class="phase-card">
+            <span class="phase-tag tag-done">Phase 24 • Shipped</span>
+            <h3 class="phase-title">CloudKit Multi-Device Sync</h3>
+            <p class="phase-desc">
+              Seamless, private synchronization across your iPhone and iPad using Apple's CloudKit. Your library stays
+              unified everywhere.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 09: Social Proof & Beta Feedback
+         ========================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Early Tester Feedback</div>
+          <h2 class="section-title">Loved by Design Purists</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="quote-body">
+              "The 1-second capture speed is absurd. Other read-it-later apps take 4 seconds just to verify the network.
+              Clutch saves and lets me get back to reading."
+            </p>
+            <div class="quote-author-row">
+              <div class="author-avatar">AL</div>
+              <div>
+                <div class="author-name">Alexandre Leclerc</div>
+                <div class="author-role">Staff Product Designer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote-body">
+              "The Daily Digest has transformed my morning dog walks. Hearing a 4-minute summary of the articles I saved
+              yesterday sounds indistinguishable from a tailored morning podcast."
+            </p>
+            <div class="quote-author-row">
+              <div class="author-avatar">SK</div>
+              <div>
+                <div class="author-name">Sarah Kowalski</div>
+                <div class="author-role">iOS Developer & Beta Tester</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote-body">
+              "Knowing my saves never leave my phone to train an external LLM is why I switched. True privacy with zero
+              compromises on intelligent extraction."
+            </p>
+            <div class="quote-author-row">
+              <div class="author-avatar">MT</div>
+              <div>
+                <div class="author-name">Marcus Thorne</div>
+                <div class="author-role">Security Researcher</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 10: Interactive FAQ Accordion
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Questions & Details</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion-list">
+          <!-- Item 1 -->
+          <div class="faq-item open">
+            <button class="faq-question-btn">
+              <span>Is Clutch free, and how is it monetized?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane" style="max-height: 250px;">
+              <div class="faq-answer-inner">
+                Yes! There is <strong>zero limit on saves</strong> in the free version — you can save any number of
+                links, videos, and articles directly into your inbox without paying.<br><br>
+                On the free tier, your first <strong>20 saves</strong> receive full background AI enrichment (metadata,
+                previews, tags, and reader mode), and you can organize up to <strong>50 bookmarks</strong> across your
+                collection shelves. To unlock unlimited background enrichment for all saves and unlimited collection
+                capacity, we offer a single StoreKit 2 non-consumable lifetime unlock
+                (<code>pocketbookmark.unlimited</code>) — no recurring subscriptions.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What happens if my iPhone does not support Apple Intelligence?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Clutch adheres strictly to our principle: <em>"Degrade gracefully, never blank."</em> Every
+                single feature has an offline heuristic fallback. If Apple Intelligence is unavailable, auto-tagging
+                uses domain heuristics, search uses substring ranking, and the Daily Digest reads clipped article text
+                with Apple's premium TTS.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>How does Clutch handle video links (YouTube, TikTok, X)?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Unlike clunky in-reader web embeds that trigger playback errors, Clutch grabs the
+                high-resolution poster thumbnail and cleanly opens the video inside its native host application or
+                Safari. Your inbox stays fast, lightweight, and clutter-free.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Is cross-device iCloud sync supported?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Yes, cross-device iCloud sync is <strong>fully supported</strong>. Powered by SwiftData and Apple's
+                CloudKit, your saved bookmarks, read states, AI tags, and collection shelves automatically synchronize
+                seamlessly across all your iPhones and iPads under your personal private iCloud account. No third-party
+                accounts or external servers are involved.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What is Clutch's Privacy Policy?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Our Privacy Policy is simple: We collect zero personal data, zero email addresses, zero reading
+                analytics, and zero device identifiers. All saves and AI computations remain strictly on your iPhone.
+                You own 100% of your data.<br><br>
+                <a href="privacy.html"
+                  style="color: var(--accent-cyan); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Read
+                  the complete Privacy Policy →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 11: High-Impact Bottom CTA Banner
+         ========================================================================== -->
+    <section class="section" id="download" style="padding-bottom: 140px;">
+      <div class="container">
+        <div class="bottom-cta-banner">
+          <h2 class="bottom-cta-title">Reclaim your reading sanctuary today.</h2>
+          <p class="bottom-cta-desc">
+            Join the Phase 11 TestFlight public beta and experience the next generation of bookmarking on iOS 26.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+            <a href="#download" class="btn btn-primary btn-lg open-beta-modal" id="bottomPrimaryCta">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.92-.92.04-2.03.62-2.69 1.39-.58.68-1.1 1.77-.96 2.82 1.03.08 2.08-.52 2.71-1.29z" />
+              </svg>
+              <span>Get TestFlight Access</span>
+            </a>
+            <button class="btn btn-secondary btn-lg open-beta-modal" id="bottomScanQrCta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span>Scan QR Code</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <div class="brand-icon-wrapper" style="width: 28px; height: 28px;">
+              <img src="images/PocketbookamLogo.svg" alt="Clutch Icon" class="brand-icon-img" width="28"
+                height="28">
+            </div>
+            <strong style="color: var(--text-primary); font-size: 1.05rem;">Clutch</strong>
+          </div>
+          <p style="color: var(--text-secondary); max-width: 320px; line-height: 1.5; font-size: 0.88rem;">
+            Save anything from anywhere in under a second, and never feel guilty about the pile again.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#intelligence" class="footer-link">Apple Intelligence</a></li>
+            <li><a href="#audio-digest" class="footer-link">Audio Digest</a></li>
+            <li><a href="#collections" class="footer-link">Collections</a></li>
+            <li><a href="#roadmap" class="footer-link">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Legal & Guidelines</div>
+          <ul class="footer-links-list">
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms of Use</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Connect</div>
+          <ul class="footer-links-list">
+            <li><a href="mailto:gemshi@me.com" class="footer-link">Developer Support</a></li>
+            <li><a href="#download" class="footer-link open-beta-modal">TestFlight Beta</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar">
+        <div>
+          © 2026 Clutch. Published by Gemshi. Built with precision for iOS 26.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="privacy.html" class="footer-link">Privacy</a>
+          <a href="terms.html" class="footer-link">Terms of Use</a>
+        </div>
+        <div>
+          Apple, iPhone, SwiftUI, SwiftData, and Apple Intelligence are trademarks of Apple Inc.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modal Dialog: TestFlight Beta Access & QR Code
+       ========================================================================== -->
+  <div class="modal-backdrop" id="betaModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="brand-icon-wrapper"
+          style="width: 54px; height: 54px; margin: 0 auto 16px auto; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
+          <img src="images/PocketbookamLogo.svg" alt="Clutch" class="brand-icon-img" width="54" height="54">
+        </div>
+        <h3 id="modalTitle" style="font-size: 1.5rem; margin-bottom: 8px;">Join TestFlight Beta</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Get early access to Clutch for iOS 26. Available now for public testing.
+        </p>
+      </div>
+
+      <!-- Direct TestFlight Link -->
+      <div style="margin-bottom: 24px;">
+        <a href="https://testflight.apple.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          style="width: 100%; font-size: 1rem; padding: 14px 20px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.92-.92.04-2.03.62-2.69 1.39-.58.68-1.1 1.77-.96 2.82 1.03.08 2.08-.52 2.71-1.29z" />
+          </svg>
+          <span>Open in Apple TestFlight</span>
+        </a>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <div style="flex: 1; height: 1px; background: var(--border-glass);"></div>
+        <span style="font-size: 0.78rem; color: var(--text-tertiary); font-family: var(--font-mono);">OR GET INVITED VIA
+          EMAIL</span>
+        <div style="flex: 1; height: 1px; background: var(--border-glass);"></div>
+      </div>
+
+      <!-- Email Waitlist Form -->
+      <form id="waitlistForm">
+        <div style="display: flex; gap: 8px;">
+          <input type="email" placeholder="Enter your Apple ID email" required
+            style="flex: 1; padding: 12px 16px; border-radius: var(--radius-full); border: 1px solid var(--border-glass-bright); background: var(--bg-surface); color: var(--text-primary); font-family: var(--font-body); font-size: 0.9rem; outline: none;">
+          <button type="submit" class="btn btn-secondary" style="padding: 12px 20px;">Invite</button>
+        </div>
+      </form>
+
+      <div style="margin-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-tertiary);">
+        Requires iOS 26.0 or iPadOS 26.0 or later.
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Privacy Policy — Clutch</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Privacy Policy — Clutch">
+  <meta name="description" content="Clutch is built to keep your reading private. Zero accounts, zero server databases, 100% on-device Apple Intelligence.">
+  <meta name="author" content="Gemshi">
+  <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F5F5F7" media="(prefers-color-scheme: light)">
+
+  <!-- Apple Specific Meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="images/PocketbookamLogo.svg">
+  <link rel="icon" type="image/svg+xml" href="images/PocketbookamLogo.svg">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Liquid Glow Canvas -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+  </div>
+
+  <!-- Global Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-link" aria-label="Clutch Home">
+        <div class="brand-icon-wrapper">
+          <img src="images/PocketbookamLogo.svg" alt="Clutch Icon" class="brand-icon-img" width="36" height="36">
+        </div>
+        <span>Clutch</span>
+        <span class="brand-badge">iOS 26</span>
+      </a>
+
+      <nav aria-label="Header Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html#features" class="nav-link">Features</a></li>
+          <li><a href="index.html#intelligence" class="nav-link">Intelligence</a></li>
+          <li><a href="index.html#audio-digest" class="nav-link">Audio Digest</a></li>
+          <li><a href="terms.html" class="nav-link">Terms of Use</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <svg id="themeIconSun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="index.html#download" class="btn btn-primary btn-sm">
+          <span>Get Beta</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="container container-narrow">
+      <a href="index.html" class="legal-back-nav">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Clutch</span>
+      </a>
+
+      <article class="legal-card">
+        <h1 class="legal-title">Privacy Policy</h1>
+        
+        <div class="legal-meta-bar">
+          <div><strong>Clutch (“the App”)</strong></div>
+          <div>•</div>
+          <div>Last updated: September 25, 2026</div>
+        </div>
+
+        <div class="legal-body">
+          <p>
+            Clutch (“the App”) is built to keep your reading private. This policy describes how the App handles information.
+          </p>
+
+          <div class="legal-highlight-box">
+            <strong>Summary:</strong><br>
+            We do not require an account. We do not operate a Clutch server that receives your bookmarks. We do not sell personal data. On-device Apple Intelligence features process content locally when available.
+          </div>
+
+          <h2>Information on your device</h2>
+          <p>
+            Bookmarks (URLs, titles, article text, thumbnails, notes, tags, collections, reminders metadata, and related enrichment) are stored on your device using Apple’s frameworks (including SwiftData). Optionally, if you enable iCloud for this App, Apple may sync that library through your personal iCloud account under Apple’s terms — not through a Clutch backend.
+          </p>
+
+          <h2>Share Extension &amp; widgets</h2>
+          <p>
+            The Share Extension and widgets read and write bookmark data only through the App Group container on your device so saves stay fast and local.
+          </p>
+
+          <h2>Natural Voice (on-device speech)</h2>
+          <p>
+            Optional Natural Voice narration downloads an English speech model (~99 MB) once to your device and keeps it there (excluded from iCloud Backup when possible). Optional Offline Languages downloads a separate multilingual speech model (~401 MB) for Arabic and other supported languages — only when you choose Download in Settings or when you Listen to a non-English story. Synthesis runs on device. Model downloads may come from public GitHub or Hugging Face hosting. Your bookmark text is not uploaded to Clutch or to a third-party speech API for narration.
+          </p>
+
+          <h2>Purchases</h2>
+          <p>
+            Unlimited unlock uses Apple’s StoreKit / In-App Purchase. Payment details are handled by Apple. We do not receive your payment card information.
+          </p>
+
+          <h2>Apple Intelligence</h2>
+          <p>
+            When Apple Intelligence is available and you leave AI features enabled, the App may send bookmark text to Apple’s on-device Foundation Models APIs for tagging, summaries, extraction, search interpretation, or shelf suggestions. That work stays on device per Apple’s platform design. If Apple Intelligence is unavailable or you turn those settings off, the App falls back to heuristics and keyword search.
+          </p>
+
+          <h2>Notifications</h2>
+          <p>
+            Reminder notifications are scheduled locally on your device. We do not send push notifications from a Clutch server.
+          </p>
+
+          <h2>Analytics &amp; tracking</h2>
+          <p>
+            The App does not include third-party advertising or analytics SDKs and does not track you across apps or websites for advertising.
+          </p>
+
+          <h2>Children’s privacy</h2>
+          <p>
+            The App is not directed at children under 13. Do not use it to store sensitive information about children.
+          </p>
+
+          <h2>Your choices</h2>
+          <p>
+            You can delete bookmarks, empty Trash, clear cached text and thumbnails, export JSON, restore or manage purchases in Settings, and control notification permission in iOS Settings. Uninstalling the App removes on-device data for that install (iCloud copies follow your iCloud settings).
+          </p>
+
+          <h2>Changes</h2>
+          <p>
+            We may update this policy. The “Last updated” date will change when we do. Continued use after an update means you accept the revised policy.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            Questions about privacy: <a href="mailto:gemshi@me.com">gemshi@me.com</a>
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-legal-bar" style="border-top: none; padding-top: 0;">
+        <div>
+          © 2026 Clutch. Published by Gemshi. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="terms.html" class="footer-link">Terms of Use</a>
+          <a href="privacy.html" class="footer-link" style="color: var(--text-primary); font-weight: 600;">Privacy Policy</a>
+          <a href="index.html" class="footer-link">Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
