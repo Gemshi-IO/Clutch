@@ -1,0 +1,5 @@
+# GitHub Pages (Jekyll) build settings.
+# Keep internal notes and repo docs off the public site.
+exclude:
+  - devNotes/
+  - README.md
