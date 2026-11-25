@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initHeroDeviceTilt();
   initViewSwitcher();
+  initDocumentsSwitcher();
   initFluffSimulator();
   initAudioDigestPlayer();
   initCollectionsSwitcher();
   initFaqAccordion();
-  initModalSystem();
   initMobileNav();
   initSmoothScroll();
 });
@@ -140,6 +140,70 @@ function initViewSwitcher() {
     card.addEventListener('click', () => {
       if (index === 0) switchToView('masonry');
       if (index === 1) switchToView('list');
+    });
+  });
+}
+
+/* ==========================================================================
+   04b. Documents & Books Switcher (EPUB Book vs. PDF View)
+   ========================================================================== */
+function initDocumentsSwitcher() {
+  const btnEpub = document.getElementById('btnDocEpub');
+  const btnPdf = document.getElementById('btnDocPdf');
+  const screenEpub = document.getElementById('docScreenEpub');
+  const screenPdf = document.getElementById('docScreenPdf');
+  const modePill = document.getElementById('docModePill');
+  const pillText = document.getElementById('docPillText');
+  const mockupFrame = document.getElementById('docMockupFrame');
+  const docCards = document.querySelectorAll('.doc-feature-card');
+
+  if (!btnEpub || !btnPdf || !screenEpub || !screenPdf) return;
+
+  function switchDocView(view) {
+    if (view === 'epub') {
+      btnEpub.classList.add('active');
+      btnPdf.classList.remove('active');
+      screenEpub.classList.remove('hidden');
+      screenEpub.classList.add('active');
+      screenPdf.classList.remove('active');
+      screenPdf.classList.add('hidden');
+      if (modePill) modePill.className = 'reader-mode-pill clean';
+      if (pillText) pillText.textContent = '✨ Reflowable EPUB • 3D Page Curl';
+      if (docCards[0]) docCards[0].classList.add('active');
+      if (docCards[3]) docCards[3].classList.remove('active');
+    } else {
+      btnPdf.classList.add('active');
+      btnEpub.classList.remove('active');
+      screenPdf.classList.remove('hidden');
+      screenPdf.classList.add('active');
+      screenEpub.classList.remove('active');
+      screenEpub.classList.add('hidden');
+      if (modePill) modePill.className = 'reader-mode-pill raw';
+      if (pillText) pillText.textContent = '📄 Native Document View • PDF & Text';
+      if (docCards[3]) docCards[3].classList.add('active');
+      if (docCards[0]) docCards[0].classList.remove('active');
+    }
+  }
+
+  btnEpub.addEventListener('click', () => switchDocView('epub'));
+  btnPdf.addEventListener('click', () => switchDocView('pdf'));
+
+  if (mockupFrame) {
+    mockupFrame.addEventListener('click', () => {
+      const isEpubActive = screenEpub.classList.contains('active');
+      switchDocView(isEpubActive ? 'pdf' : 'epub');
+    });
+  }
+
+  docCards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+      docCards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      if (index === 0 || index === 1) {
+        switchDocView('epub');
+      } else if (index === 3) {
+        switchDocView('pdf');
+      }
     });
   });
 }
@@ -503,60 +567,6 @@ function initFaqAccordion() {
       }
     });
   });
-}
-
-/* ==========================================================================
-   09. Modal System (TestFlight Beta & Waitlist)
-   ========================================================================== */
-function initModalSystem() {
-  const modal = document.getElementById('betaModal');
-  const openButtons = document.querySelectorAll('.open-beta-modal');
-  const closeBtn = document.getElementById('modalCloseBtn');
-  const waitlistForm = document.getElementById('waitlistForm');
-
-  if (!modal) return;
-
-  function openModal(e) {
-    if (e) e.preventDefault();
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-
-  openButtons.forEach(btn => btn.addEventListener('click', openModal));
-  if (closeBtn) closeBtn.addEventListener('click', closeModal);
-
-  // Click outside backdrop to close
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  // Escape key to close
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  // Handle Waitlist Form
-  if (waitlistForm) {
-    waitlistForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const emailInput = waitlistForm.querySelector('input[type="email"]');
-      if (emailInput && emailInput.value) {
-        const userEmail = emailInput.value.trim();
-        // Open user's email client directly with prefilled invite request to developer
-        window.location.href = `mailto:gemshi@me.com?subject=Clutch%20TestFlight%20Invite%20Request&body=Hi%20Gemshi%2C%0D%0A%0D%0APlease%20add%20my%20Apple%20ID%20to%20the%20Clutch%20TestFlight%20beta%3A%0D%0A${encodeURIComponent(userEmail)}`;
-        showToast(`🎉 Opening invite email for ${userEmail}...`);
-        emailInput.value = '';
-        closeModal();
-      }
-    });
-  }
 }
 
 /* ==========================================================================

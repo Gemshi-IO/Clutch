@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-itunes-app" content="app-id=6812063729">
   <title>Clutch — Save Anything in Under a Second. Powered by Apple Intelligence.</title>
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="Clutch — Save Anything in Under a Second. Powered by Apple Intelligence.">
   <meta name="description"
-    content="A frictionless, visually stunning iOS 26 app to save, organize, and consume content from across the web. Zero accounts, zero cloud servers, 100% on-device intelligence.">
+    content="A frictionless, visually stunning iOS 26 app to save, organize, and consume web content and documents. Ingest PDF, EPUB, TXT, and Markdown, convert PDFs to reflowable books with 3D page curls, and listen with on-device Natural Voice. No accounts, no tracking, and no Clutch servers.">
   <meta name="keywords"
-    content="Clutch, iOS 26, bookmark manager, read it later, Apple Intelligence, FoundationModels, SwiftUI, SwiftData, distraction-free reader, daily digest audio">
+    content="Clutch, iOS 26, bookmark manager, read it later, EPUB reader, PDF to EPUB, document reader, Markdown, Natural Voice audio, Apple Intelligence, FoundationModels, SwiftUI, SwiftData, distraction-free reader">
   <meta name="author" content="Gemshi">
   <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#F5F5F7" media="(prefers-color-scheme: light)">
@@ -57,6 +58,7 @@
     "name": "Clutch",
     "operatingSystem": "iOS 26.0+",
     "applicationCategory": "ProductivityApplication",
+    "installUrl": "https://apps.apple.com/app/clutch-read-later-bookmarks/id6812063729",
     "description": "Frictionless, on-device content sanctuary to save, organize, and consume media with Apple Intelligence.",
     "offers": {
       "@type": "Offer",
@@ -92,6 +94,7 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-menu" id="navMenu">
           <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#documents" class="nav-link">Documents &amp; Books</a></li>
           <li><a href="#intelligence" class="nav-link">Intelligence</a></li>
           <li><a href="#audio-digest" class="nav-link">Audio Digest</a></li>
           <li><a href="#collections" class="nav-link">Collections</a></li>
@@ -123,9 +126,9 @@
           </svg>
         </button>
 
-        <!-- Beta CTA -->
-        <a href="#download" class="btn btn-primary btn-sm open-beta-modal" id="headerCtaBtn">
-          <span>Join Beta</span>
+        <!-- App Store CTA -->
+        <a href="https://apps.apple.com/app/clutch-read-later-bookmarks/id6812063729" class="btn btn-primary btn-sm" id="headerCtaBtn">
+          <span>Download</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -149,6 +152,7 @@
   <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
     <a href="#features" class="nav-link">Features</a>
+    <a href="#documents" class="nav-link">Documents &amp; Books</a>
     <a href="#intelligence" class="nav-link">Apple Intelligence</a>
     <a href="#audio-digest" class="nav-link">Audio Digest</a>
     <a href="#collections" class="nav-link">Collections & Shelves</a>
@@ -156,7 +160,7 @@
     <a href="#roadmap" class="nav-link">Production Roadmap</a>
     <a href="#faq" class="nav-link">FAQ & Support</a>
     <div style="margin-top: 16px;">
-      <a href="#download" class="btn btn-primary btn-lg open-beta-modal" style="width: 100%;">Get TestFlight Beta</a>
+      <a href="https://apps.apple.com/app/clutch-read-later-bookmarks/id6812063729" class="btn btn-primary btn-lg" style="width: 100%;">Download on the App Store</a>
     </div>
   </div>
 
@@ -185,18 +189,17 @@
 
           <!-- Hero Subtitle -->
           <p class="hero-subtitle">
-            Clutch turns chaotic links, videos, and articles into a calm, distraction-free sanctuary. Zero
-            accounts. Zero cloud servers. Powered by 100% on-device intelligence.
+            Clutch turns chaotic links, documents, and web articles into a calm, distraction-free sanctuary. Load PDFs, EPUBs, or notes and read with 3D page curls or listen with on-device Natural Voice. No accounts. No tracking. No Clutch servers.
           </p>
 
           <!-- Action Buttons -->
           <div class="hero-cta-group">
-            <a href="#download" class="btn btn-primary btn-lg open-beta-modal" id="heroPrimaryCta">
+            <a href="https://apps.apple.com/app/clutch-read-later-bookmarks/id6812063729" class="btn btn-primary btn-lg" id="heroPrimaryCta">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.92-.92.04-2.03.62-2.69 1.39-.58.68-1.1 1.77-.96 2.82 1.03.08 2.08-.52 2.71-1.29z" />
               </svg>
-              <span>Download on TestFlight</span>
+              <span>Download on the App Store</span>
             </a>
 
             <a href="#audio-digest" class="btn btn-secondary btn-lg" id="heroSecondaryCta">
@@ -222,6 +225,12 @@
                 <polyline points="20 6 9 17 4 12"></polyline>
               </svg>
               <span>Zero Accounts</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>PDF, EPUB &amp; Docs</span>
             </div>
             <div class="hero-meta-item">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2.5">
@@ -339,7 +348,7 @@
                 <h3 class="feature-point-title">Zero-Friction Ingestion Engine</h3>
               </div>
               <p class="feature-point-desc">
-                Save from Safari, X, TikTok, Instagram, Reddit, or YouTube under 120MB memory ceilings. Saves write
+                Save from Safari, X, TikTok, Instagram, Reddit, or YouTube — or load documents (PDF, EPUB, TXT, MD). Saves write
                 immediately to a shared SwiftData store in under a second — enrichment happens quietly in the
                 background.
               </p>
@@ -386,7 +395,126 @@
     </section>
 
     <!-- ==========================================================================
-         Section 03: Apple Intelligence Deep Dive
+         Section 03: Universal Document & EPUB Book Reader
+         ========================================================================== -->
+    <section class="section" id="documents">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Documents &amp; E-Books</div>
+          <h2 class="section-title">Read any document.<br><span class="gradient-accent">Or turn PDFs into real books.</span></h2>
+          <p class="section-desc">
+            Load PDFs, EPUBs, text files, and Markdown (.md) documents effortlessly. Convert rigid PDFs into reflowable books with a single tap, turn pages with authentic 3D curls, and listen along with on-device Natural Voice.
+          </p>
+
+          <!-- Interactive Document Switcher Segmented Control -->
+          <div class="segmented-pill-wrapper" style="margin-top: 28px;">
+            <button class="segmented-pill-btn active" id="btnDocEpub">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>EPUB Book Reader</span>
+            </button>
+            <button class="segmented-pill-btn" id="btnDocPdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>PDF &amp; Document View</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="view-showcase-container">
+          <!-- Left: Architectural Feature Pillars -->
+          <div class="showcase-features-list">
+            <div class="feature-point-card doc-feature-card active" id="docCard1">
+              <div class="feature-point-header">
+                <span class="feature-number">01</span>
+                <h3 class="feature-point-title">1-Tap PDF to EPUB Book Conversion</h3>
+              </div>
+              <p class="feature-point-desc">
+                Pinching, zooming, and panning across microscopic desktop PDFs on a mobile screen is exhausting. Clutch converts fixed-layout PDFs into reflowable, book-like EPUB format with a single tap — giving you adjustable typography, fluid paragraphs, and effortless readability.
+              </p>
+            </div>
+
+            <div class="feature-point-card doc-feature-card" id="docCard2">
+              <div class="feature-point-header">
+                <span class="feature-number">02</span>
+                <h3 class="feature-point-title">Authentic 3D Page-Curl Reading</h3>
+              </div>
+              <p class="feature-point-desc">
+                Turn pages like a real paperback with interactive physics-based page curl animations. Includes precise reading progress sliders, chapter navigation, and customizable font size and line spacing for immersive, distraction-free reading.
+              </p>
+            </div>
+
+            <div class="feature-point-card doc-feature-card" id="docCard3">
+              <div class="feature-point-header">
+                <span class="feature-number">03</span>
+                <h3 class="feature-point-title">Natural Voice for Every Document</h3>
+              </div>
+              <p class="feature-point-desc">
+                Turn any file into an instant audiobook. Tap the headphone icon in the toolbar to listen to PDFs, EPUBs, text files, and markdown notes narrated aloud using bundled on-device Natural Voice — with full lock screen and CarPlay support.
+              </p>
+            </div>
+
+            <div class="feature-point-card doc-feature-card" id="docCard4">
+              <div class="feature-point-header">
+                <span class="feature-number">04</span>
+                <h3 class="feature-point-title">Universal Document Ingestion</h3>
+              </div>
+              <p class="feature-point-desc">
+                Load documents directly from the iOS Share Sheet, Files app, or AirDrop. All files are stored privately on your device and stay readable offline.
+              </p>
+              <div class="format-tags-row">
+                <span class="format-tag">PDF</span>
+                <span class="format-tag">EPUB</span>
+                <span class="format-tag">TXT</span>
+                <span class="format-tag">.MD MARKDOWN</span>
+                <span class="format-tag" style="background: rgba(48, 209, 88, 0.12); color: #30D158; border-color: rgba(48, 209, 88, 0.25);">🎙️ NATURAL VOICE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Device Mockup -->
+          <div class="reader-mockup-container">
+            <!-- Floating Mode Pill -->
+            <div class="reader-mode-pill clean" id="docModePill">
+              <span class="pill-dot"></span>
+              <span class="pill-text" id="docPillText">✨ Reflowable EPUB • 3D Page Curl</span>
+            </div>
+
+            <!-- Interactive iPhone Mockup Frame -->
+            <div class="doc-mockup-frame" id="docMockupFrame" role="button" tabindex="0"
+              aria-label="Click to toggle between EPUB Book Reader and PDF View"
+              title="Click to toggle between EPUB Book Reader and PDF View">
+              <img src="images/EPUBReader.webp" alt="Clutch EPUB Book Reader with 3D Page Curl and Audio Narration"
+                class="reader-screen-view active" id="docScreenEpub" width="360" height="782" loading="eager">
+              <img src="images/PDFReader.webp" alt="Clutch PDF Document Reader View"
+                class="reader-screen-view hidden" id="docScreenPdf" width="360" height="782" loading="lazy">
+            </div>
+
+            <!-- Interactive Hint -->
+            <div class="reader-tap-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+              <span>Click image or buttons to switch views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 04: Apple Intelligence Deep Dive
          ========================================================================== -->
     <section class="section" id="intelligence">
       <div class="container">
@@ -395,8 +523,8 @@
           <h2 class="section-title">Artificial Intelligence. <br><span class="gradient-accent">Genuine Privacy.</span>
           </h2>
           <p class="section-desc">
-            All AI runs entirely on-device via Apple's <code>FoundationModels</code>. No OpenAI, no Anthropic, no
-            telemetry, and zero network calls.
+            All AI runs entirely on-device via Apple's <code>FoundationModels</code>. Your content is never sent to
+            a third-party AI service, and there is no telemetry.
           </p>
         </div>
 
@@ -558,9 +686,8 @@
                   style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 55, 95, 0.15); color: #FF375F; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   ✓</div>
                 <div>
-                  <strong style="color: var(--text-primary); font-size: 0.95rem;">Personal Voice Opt-In</strong>
-                  <div style="color: var(--text-secondary); font-size: 0.88rem;">Optionally narrate your daily queue
-                    using your own cloned Apple Personal Voice via <code>AVSpeechSynthesizer</code>.</div>
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">Natural Voice &amp; Personal Voice</strong>
+                  <div style="color: var(--text-secondary); font-size: 0.88rem;">Listen to your saved queue, web articles, PDFs, EPUB books, or markdown notes using bundled on-device Natural Voice or your cloned Personal Voice.</div>
                 </div>
               </div>
             </div>
@@ -835,10 +962,10 @@
           </div>
 
           <div class="phase-card active-phase">
-            <span class="phase-tag tag-active">Phase 11 • Current Beta</span>
-            <h3 class="phase-title">TestFlight Public Testing</h3>
+            <span class="phase-tag tag-active">Launched • Now Live</span>
+            <h3 class="phase-title">App Store Release</h3>
             <p class="phase-desc">
-              On-device smoke tests, App Group verification across iOS 26 builds, and TestFlight release distribution.
+              Clutch is now available on the App Store for iPhone and iPad running iOS 26 or later.
             </p>
           </div>
 
@@ -849,62 +976,6 @@
               Seamless, private synchronization across your iPhone and iPad using Apple's CloudKit. Your library stays
               unified everywhere.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Section 09: Social Proof & Beta Feedback
-         ========================================================================== -->
-    <section class="section" id="testimonials">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-eyebrow">Early Tester Feedback</div>
-          <h2 class="section-title">Loved by Design Purists</h2>
-        </div>
-
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <p class="quote-body">
-              "The 1-second capture speed is absurd. Other read-it-later apps take 4 seconds just to verify the network.
-              Clutch saves and lets me get back to reading."
-            </p>
-            <div class="quote-author-row">
-              <div class="author-avatar">AL</div>
-              <div>
-                <div class="author-name">Alexandre Leclerc</div>
-                <div class="author-role">Staff Product Designer</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="quote-body">
-              "The Daily Digest has transformed my morning dog walks. Hearing a 4-minute summary of the articles I saved
-              yesterday sounds indistinguishable from a tailored morning podcast."
-            </p>
-            <div class="quote-author-row">
-              <div class="author-avatar">SK</div>
-              <div>
-                <div class="author-name">Sarah Kowalski</div>
-                <div class="author-role">iOS Developer & Beta Tester</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="quote-body">
-              "Knowing my saves never leave my phone to train an external LLM is why I switched. True privacy with zero
-              compromises on intelligent extraction."
-            </p>
-            <div class="quote-author-row">
-              <div class="author-avatar">MT</div>
-              <div>
-                <div class="author-name">Marcus Thorne</div>
-                <div class="author-role">Security Researcher</div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -943,7 +1014,24 @@
             </div>
           </div>
 
-          <!-- Item 2 -->
+          <!-- Item 2: Document Ingest & EPUB Conversion -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Can I import documents like PDFs, EPUBs, and Markdown files?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Yes! Clutch natively supports importing <strong>PDF, EPUB, TXT, and Markdown (.md)</strong> documents directly into your library via the iOS Share Sheet or Files app.<br><br>
+                You can read PDFs easily like a real book by <strong>converting them to EPUB with a single tap</strong>, enjoying tactile 3D page curls and responsive typography. Plus, every document supports <strong>Natural Voice reading</strong>, allowing you to listen to any file hands-free on device.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
           <div class="faq-item">
             <button class="faq-question-btn">
               <span>What happens if my iPhone does not support Apple Intelligence?</span>
@@ -1011,7 +1099,7 @@
             <div class="faq-answer-pane">
               <div class="faq-answer-inner">
                 Our Privacy Policy is simple: We collect zero personal data, zero email addresses, zero reading
-                analytics, and zero device identifiers. All saves and AI computations remain strictly on your iPhone.
+                analytics, and zero device identifiers. All AI processing happens on your device. If you turn on iCloud sync, your library syncs through your own private iCloud account — never through a Clutch server.
                 You own 100% of your data.<br><br>
                 <a href="privacy.html"
                   style="color: var(--accent-cyan); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Read
@@ -1031,26 +1119,20 @@
         <div class="bottom-cta-banner">
           <h2 class="bottom-cta-title">Reclaim your reading sanctuary today.</h2>
           <p class="bottom-cta-desc">
-            Join the Phase 11 TestFlight public beta and experience the next generation of bookmarking on iOS 26.
+            Clutch is available now on the App Store for iPhone and iPad running iOS 26 or later.
           </p>
 
           <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="#download" class="btn btn-primary btn-lg open-beta-modal" id="bottomPrimaryCta">
+            <a href="https://apps.apple.com/app/clutch-read-later-bookmarks/id6812063729" class="btn btn-primary btn-lg" id="bottomPrimaryCta">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.92-.92.04-2.03.62-2.69 1.39-.58.68-1.1 1.77-.96 2.82 1.03.08 2.08-.52 2.71-1.29z" />
               </svg>
-              <span>Get TestFlight Access</span>
+              <span>Download on the App Store</span>
             </a>
-            <button class="btn btn-secondary btn-lg open-beta-modal" id="bottomScanQrCta">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
-              <span>Scan QR Code</span>
-            </button>
+            <a href="help.html" class="btn btn-secondary btn-lg" id="bottomGuideCta">
+              <span>Read the User Guide</span>
+            </a>
           </div>
         </div>
       </div>
@@ -1080,6 +1162,7 @@
           <div class="footer-col-title">Navigation</div>
           <ul class="footer-links-list">
             <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#documents" class="footer-link">Documents &amp; Books</a></li>
             <li><a href="#intelligence" class="footer-link">Apple Intelligence</a></li>
             <li><a href="#audio-digest" class="footer-link">Audio Digest</a></li>
             <li><a href="#collections" class="footer-link">Collections</a></li>
@@ -1100,7 +1183,7 @@
           <div class="footer-col-title">Connect</div>
           <ul class="footer-links-list">
             <li><a href="mailto:gemshi@me.com" class="footer-link">Developer Support</a></li>
-            <li><a href="#download" class="footer-link open-beta-modal">TestFlight Beta</a></li>
+            <li><a href="https://apps.apple.com/app/clutch-read-later-bookmarks/id6812063729" class="footer-link">App Store</a></li>
           </ul>
         </div>
       </div>
@@ -1120,63 +1203,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- ==========================================================================
-       Modal Dialog: TestFlight Beta Access & QR Code
-       ========================================================================== -->
-  <div class="modal-backdrop" id="betaModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-card">
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <div style="text-align: center; margin-bottom: 24px;">
-        <div class="brand-icon-wrapper"
-          style="width: 54px; height: 54px; margin: 0 auto 16px auto; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
-          <img src="images/PocketbookamLogo.svg" alt="Clutch" class="brand-icon-img" width="54" height="54">
-        </div>
-        <h3 id="modalTitle" style="font-size: 1.5rem; margin-bottom: 8px;">Join TestFlight Beta</h3>
-        <p style="color: var(--text-secondary); font-size: 0.9rem;">
-          Get early access to Clutch for iOS 26. Available now for public testing.
-        </p>
-      </div>
-
-      <!-- Direct TestFlight Link -->
-      <div style="margin-bottom: 24px;">
-        <a href="https://testflight.apple.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-          style="width: 100%; font-size: 1rem; padding: 14px 20px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.84.94-2.92-.92.04-2.03.62-2.69 1.39-.58.68-1.1 1.77-.96 2.82 1.03.08 2.08-.52 2.71-1.29z" />
-          </svg>
-          <span>Open in Apple TestFlight</span>
-        </a>
-      </div>
-
-      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-        <div style="flex: 1; height: 1px; background: var(--border-glass);"></div>
-        <span style="font-size: 0.78rem; color: var(--text-tertiary); font-family: var(--font-mono);">OR GET INVITED VIA
-          EMAIL</span>
-        <div style="flex: 1; height: 1px; background: var(--border-glass);"></div>
-      </div>
-
-      <!-- Email Waitlist Form -->
-      <form id="waitlistForm">
-        <div style="display: flex; gap: 8px;">
-          <input type="email" placeholder="Enter your Apple ID email" required
-            style="flex: 1; padding: 12px 16px; border-radius: var(--radius-full); border: 1px solid var(--border-glass-bright); background: var(--bg-surface); color: var(--text-primary); font-family: var(--font-body); font-size: 0.9rem; outline: none;">
-          <button type="submit" class="btn btn-secondary" style="padding: 12px 20px;">Invite</button>
-        </div>
-      </form>
-
-      <div style="margin-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-tertiary);">
-        Requires iOS 26.0 or iPadOS 26.0 or later.
-      </div>
-    </div>
-  </div>
 
   <!-- Main JavaScript File -->
   <script src="js/main.js"></script>
